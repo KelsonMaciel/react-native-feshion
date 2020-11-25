@@ -58,8 +58,8 @@ const slides = [
     }, 
     {
         title: "Funky",  
-        subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, aspernatur.', 
-        description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat quo quam molestias vitae. Cumque expedita praesentium error animi fuga deserunt?' ,
+        subtitle: 'Lorem ipsum dolor si.', 
+        description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.' ,
         color: "#FFDDDD",
         picture: require("./../../../assets/5.png")
     }, 
