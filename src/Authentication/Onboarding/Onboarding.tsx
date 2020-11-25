@@ -40,28 +40,45 @@ const slides = [
         subtitle: "Find your OutFit" , 
         description: "Confused about outfit? Dont worry!  Find the bast outfit",
         color: "#BFFAF5",
-        picture: require("./../../../assets/2.png")
+        picture: {
+            src: require("./../../../assets/2.png"),
+            width: 2713,
+            height: 3583,
+        }
+
     }, 
     {
         title: "Playful",  
         subtitle: "Hear it First, Wear it First", 
         description: "Heating the clother in your wardrobe?  explore hundreds of "  , 
         color: "#BEECC4",
-        picture: require("./../../../assets/4.png")
+        picture: {
+            src: require("./../../../assets/4.png"),
+            width: 2791,
+            height: 3744,
+        }
     }, 
     {
         title: "Excentric",  
         subtitle: 'Lorem ipsum dolor sit amet', 
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis, consequuntur ', 
         color: "#FFE4D9",
-        picture: require("./../../../assets/3.png")
+        picture: {
+            src: require("./../../../assets/3.png"),
+           width: 2338,
+           height: 2944,
+        }
     }, 
     {
         title: "Funky",  
         subtitle: 'Lorem ipsum dolor si.', 
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.' ,
         color: "#FFDDDD",
-        picture: require("./../../../assets/5.png")
+        picture: {
+            src: require("./../../../assets/5.png"),
+            width: 1857,
+            height: 2451,
+        }
     }, 
 ]
 
