@@ -1,4 +1,4 @@
-import { createTheme, createText } from '@shopify/restyle'
+import { createTheme, createText, createBox } from '@shopify/restyle'
 
 const palette = {
   primary: '#2CB9B0',
@@ -23,6 +23,12 @@ const theme = createTheme({
     l: 24,
     xl: 40,
   },
+  borderRadii: {
+    s: 4,
+    m: 10,
+    l: 25,
+    xl: 75,
+  },
   breakpoints: {},
   textVariants: {
     hero: {
@@ -37,7 +43,6 @@ const theme = createTheme({
       fontFamily: "SFProDisplay-SemiBold",
       color: "title"
     },
-
     title2: {
       fontSize: 24,
       lineHeight: 30,
@@ -59,5 +64,6 @@ const theme = createTheme({
 });
 
 export type Theme = typeof theme;
+export const Box = createBox<Theme>();
 export const Text = createText<Theme>();
 export default theme;

@@ -2,10 +2,11 @@ import React, { useRef } from 'react';
 import { View, StyleSheet, Dimensions, Image } from 'react-native';
 import {interpolateColor , useScrollHandler} from  "react-native-redash/lib/module/v1";
 
-import Slide, {SLIDE_HEIGHT, BORDER_RADIUS} from './Slide';
+import Slide, {SLIDE_HEIGHT} from './Slide';
 import Dot from './Dot';
 import Animated, {multiply, divide, interpolate, Extrapolate} from 'react-native-reanimated';
 import SubSlide from './SubSlide';
+import { theme } from '../../components';
 
 const {width} = Dimensions.get("window");
 const styles = StyleSheet.create({
@@ -13,16 +14,16 @@ const styles = StyleSheet.create({
         flex:1,
         backgroundColor: "white"
     },
-    slider: {
-        height: SLIDE_HEIGHT,
-        borderBottomRightRadius: BORDER_RADIUS,
-    },
     underlay: {
         ...StyleSheet.absoluteFillObject,
         alignItems: 'center',
         justifyContent: "flex-end",
-        borderBottomRightRadius: BORDER_RADIUS,
+        borderBottomRightRadius: theme.borderRadii.xl,
         overflow: 'hidden',
+    },
+    slider: {
+        height: SLIDE_HEIGHT,
+        borderBottomRightRadius: theme.borderRadii.xl,
     },
     footer: {
         flex: 1,
@@ -30,11 +31,11 @@ const styles = StyleSheet.create({
     footerContent: {
         flex: 1,
         backgroundColor: "white", 
-        borderTopLeftRadius: BORDER_RADIUS,
+        borderTopLeftRadius: theme.borderRadii.xl,
     },
     pagination: {
         ...StyleSheet.absoluteFillObject, 
-        height: BORDER_RADIUS, 
+        height: theme.borderRadii.xl,
         flexDirection: "row",
         justifyContent: 'center',
         alignItems: 'center'
@@ -60,7 +61,7 @@ const slides = [
         description: "Heating the clother in your wardrobe?  explore hundreds of "  , 
         color: "#BEECC4",
         picture: {
-            src: require("./../../../assets/4.png"),
+            src: require("./../../../assets/2.png"),
             width: 2791,
             height: 3744,
         }
@@ -71,7 +72,7 @@ const slides = [
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis, consequuntur ', 
         color: "#FFE4D9",
         picture: {
-            src: require("./../../../assets/3.png"),
+            src: require("./../../../assets/2.png"),
            width: 2338,
            height: 2944,
         }
@@ -82,7 +83,7 @@ const slides = [
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.' ,
         color: "#FFDDDD",
         picture: {
-            src: require("./../../../assets/5.png"),
+            src: require("./../../../assets/2.png"),
             width: 1857,
             height: 2451,
         }
@@ -114,8 +115,8 @@ const Onboarding = () => {
                     <Image source={picture.src} style={
                     {   
                         ...StyleSheet.absoluteFillObject, 
-                        width: width - BORDER_RADIUS,
-                        height: (width - BORDER_RADIUS) * picture.height / picture.width
+                        width: width - theme.borderRadii.xl,
+                        height: (width - theme.borderRadii.xl) * picture.height / picture.width
                     }}/>
                 </Animated.View>
                 );
