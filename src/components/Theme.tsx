@@ -4,8 +4,10 @@ const palette = {
   primary: '#2CB9B0',
   title: '#0C0D34',
   text: 'rgba(12, 13,  52, 0.7)',
+  button: '#0C0D34',
   white: 'white',
   grey: 'rgba(12, 13, 52, 0.2)',
+  lightGrey: '#F4F0EF'
 };
 
 
@@ -14,8 +16,10 @@ const theme = createTheme({
     primary: palette.primary,
     title: palette.title,
     text: palette.text,
+    button: palette.button,
     white: palette.white,
     grey: palette.grey,
+    'slide.grey': palette.lightGrey,
   },
   spacing: {
     s: 8,
