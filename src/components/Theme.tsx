@@ -2,9 +2,8 @@ import { createTheme, createText, createBox } from '@shopify/restyle'
 
 const palette = {
   primary: '#2CB9B0',
-  title: '#0C0D34',
+  secondary: '#0C0D34',
   text: 'rgba(12, 13,  52, 0.7)',
-  button: '#0C0D34',
   white: 'white',
   grey: 'rgba(12, 13, 52, 0.2)',
   lightGrey: '#F4F0EF'
@@ -14,9 +13,8 @@ const palette = {
 const theme = createTheme({
   colors: {
     primary: palette.primary,
-    title: palette.title,
+    secondary: palette.secondary,
     text: palette.text,
-    button: palette.button,
     white: palette.white,
     grey: palette.grey,
     'slide.grey': palette.lightGrey,
@@ -45,13 +43,13 @@ const theme = createTheme({
     title1: {
       fontSize: 28,
       fontFamily: "SFProDisplay-SemiBold",
-      color: "title"
+      color: "secondary"
     },
     title2: {
       fontSize: 24,
       lineHeight: 30,
       fontFamily: "SFProDisplay-SemiBold",
-      color: "title"
+      color: "secondary"
     },
     body: {
       fontSize: 16,
